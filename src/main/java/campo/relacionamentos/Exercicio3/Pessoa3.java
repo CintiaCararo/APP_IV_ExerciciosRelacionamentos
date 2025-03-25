@@ -17,7 +17,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Table(name="pessoa3")
-public class Pessoa {
+public class Pessoa3 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

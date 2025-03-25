@@ -16,7 +16,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Table(name="endereco2")
-public class Endereco {
+public class Endereco2 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,7 +27,7 @@ public class Endereco {
     private String cep;
 
 
-    public Endereco(String rua, String cidade, String estado, String cep) {
+    public Endereco2(String rua, String cidade, String estado, String cep) {
         this.rua = rua;
         this.cidade = cidade;
         this.estado = estado;

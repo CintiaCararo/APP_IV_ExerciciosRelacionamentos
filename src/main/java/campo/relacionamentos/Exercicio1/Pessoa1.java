@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,6 +26,8 @@ public class Pessoa1 {
     private String nome;
     private String cpf;
 
-    //Endereço aqui
+    @OneToOne
+    @JoinColumn(name="endereco_id", referencedColumnName = "id")
+    private Endereco1 endereco;
 
 }
